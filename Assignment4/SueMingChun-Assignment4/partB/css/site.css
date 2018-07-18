@@ -1,0 +1,116 @@
+/********************************************************************************* 
+* 
+* WEB222 – Assignment #4a
+* 
+* I declare that this assignment is my own work in accordance with Seneca 
+* Academic Policy. No part of this assignment has been copied manually or 
+* electronically from any other source (including web sites) or distributed to 
+* other students. 
+* 
+* Name: _____Sue Ming Chun_________________ Student ID: ___032343154___________ Date: __July 10th 2018______________ 
+* 
+********************************************************************************/
+
+/* STEP 1 */
+/* Select all elements that have class main-container to adjust maximum width and set no top/bottom margins, auto left/right margins */
+.main-container {
+	max-width: 960px;
+	margin: 0px auto 0px;
+}
+
+/* Select all <nav> elements that are a child of an element with class “main-container” and adjust it’s size and position */
+.main-container nav {
+	width: 30%;
+	float: left;
+}
+
+/* Select main class inside main-container class and adjust width to 70% and position element to left side */
+.main-container .main {
+	width: 70%;
+	float: right;
+}
+
+/* Select header tag inside main-container class to add 10 pixels padding, change background color to #eeeeee (a light grey), a bottom border of 1 pixel solid #cccccc (a darker grey) and bottom margin of 30 pixels */ 
+.main-container header {
+	padding: 10px;
+	background-color: #eeeeee;
+	border-bottom: 1px solid #cccccc;
+	margin-bottom: 30px;
+}
+
+/* Select h1 tag from parent tag header in class main-container to adjust width to 70%, font size to 24 pixels, position element and text to right, add top margin of 10 pixels */
+.main-container header h1 {
+	width: 70%;
+	font-size: 24px;
+	float: right;
+	text-align: right;
+	margin-top: 10px;
+}
+
+/* Select footer tag from main-container class to position element beneath all floating elements, add top/bottom padding of 20 pixels, left/right padding of 10 pixels, background colour #eeeeee (light grey), solid top border 1 pixels in #cccccc (darker grey) and font size of 13 pixels */
+.main-container footer {
+	clear: both;
+	padding: 20px 10px;
+	background-color: #eeeeee;
+	border-top: 1px solid #cccccc;
+	font-size: 13px;
+	
+}
+
+/* STEP 2 */
+/* Select by ID "logo" and change width to 30%, font size to 25 pixels and bold font */
+#logo {
+	width: 30%;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+/* Select img tag by ID "logo" and change width to 94 pixels and align to middle of text "Canada" */
+#logo img {
+	width: 94px;
+	vertical-align: middle;
+}
+
+/* Select ul tag from parent tag nav to remove bullet points */ 
+nav ul {
+	list-style-type: none;
+}
+
+/* select a tag from parent tag ul from parent tag nav to render link as block-level element, remove underline and add 5 pixel padding around link */
+nav ul a {
+	display: block;
+	text-decoration: none; 
+	padding: 5px;
+}
+
+/* STEP 3 */
+/* Select class province of div tag to set width to 30%, position elements to right of previous element, add 8 pixels margin and height of element 310 pixels */
+div.province {
+	width: 30%;
+	float: left;
+	margin: 8px;
+	height: 310px;
+}
+
+/* Select the class description from class province of div tag to set max height to 165px, show scroll bar if content over 165 pixels high, hide scroll bar if content does not fit horizontally and top/bottom margins 8 pixels */
+div.province .description {
+	max-height: 165px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin: 8px 0px;
+}
+
+/* select the a tag in class privince of div tag to set block-level element, align text to centre, background colour to #555555 (dark grey), font colour to #eeeeee (light grey), no underline and padding around link 5 pixels */ 
+div.province a {
+	display: block;
+	text-align: center;
+	background-color: #555555;
+	color: #eeeeee;
+	text-decoration: none;
+	padding: 5px;
+}
+
+/* set class flag of img tag to 100% width */
+img.flag {
+	width: 100%;
+}

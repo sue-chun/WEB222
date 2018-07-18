@@ -1,0 +1,75 @@
+﻿/********************************************************************************* 
+* 
+* WEB222 – Assignment #4a
+* 
+* I declare that this assignment is my own work in accordance with Seneca 
+* Academic Policy. No part of this assignment has been copied manually or 
+* electronically from any other source (including web sites) or distributed to 
+* other students. 
+* 
+* Name: _____Sue Ming Chun_________________ Student ID: ___032343154___________ Date: __July 10th 2018______________ 
+* 
+********************************************************************************/
+
+/* Place all of your CSS Code in this file */
+
+/********************************************************************************* 
+*
+* WEB222 – Assignment #4a
+*
+* I declare that this assignment is my own work in accordance with Seneca 
+* Academic Policy. No part of this assignment has been copied manually or 
+* electronically from any other source (including web sites) or distributed to 
+* other students. 
+* 
+* Name: ___Sue Ming Chun_________ Student ID: __032343154____ Date: __July 9th 2018______ 
+* 
+********************************************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+
+
+body {color: #800000;}
+
+/* footer and pet descriptions */ 
+nav, footer {background-color: #800000;}
+
+
+header {
+	color: #800000; 
+	text-decoration: underline;
+}
+
+/* Sue Pets title */ 
+h1.sue-pets {
+	font-family: 'Shrikhand', cursive; 
+	font-size: 20pt; 
+	color: #800000;
+}
+
+div.main-table-container {
+	max-height: 650px;
+	overflow-y: scroll;
+}
+
+/* header of table (photo and description) */ 
+table.main-table-top th {
+	font-size: 20px;
+	color: #800000;
+	font-family: 'Shrikhand', cursive;
+	text-decoration: underline;
+}
+
+/* more styling of descriptions of pets */ 
+table.main-table td {
+	border: 1.5px solid black;
+	table-layout: auto;
+	text-align: left;
+    	padding: 15px;
+}
+
+/* the various words in description that are inside span tags */ 
+.main-table span {
+	font-weight: bold;
+	color: #b30000;
+}
