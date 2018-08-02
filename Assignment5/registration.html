@@ -1,0 +1,104 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>Chun</title>
+    <link rel="stylesheet" href="normalize1.css" />
+    <script src="registration.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+        <div id="header">
+            <h1 id="head">
+                <img src="logo.jpg" alt="smiley" height="50"/>
+                Student Account Registration
+            </h1>
+        </div>
+    </header>
+    <div class="navi">
+        <!--Navigation-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Welcome Page</a></li>
+                <li><a id="current" href="registration.html">Registration</a></li>
+            </ul>
+        </nav>
+        <div class="main">
+            <!--Form-->
+            <form id="signup" name="signup" method="POST" action="https://httpbin.org/post" onsubmit="return validate()">
+                <br />
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <!--First and Last name allows letters and space-->
+                    <label for="fname"> First Name: </label><br>
+                    <input type="text" pattern="[A-Za-z ]{1,}" onchange="sideErrors(this)" name="fname" class="fields" id="fname" tabindex="1" required><br>
+                    <label for="lname"> Last Name: </label><br>
+                    <input type="text" pattern="[A-Za-z ]{1,}" onchange="sideErrors(this)" name="lname" class="fields" id="lname" tabindex="2" required><br>
+                    <!--Unit# and Street# allows numbers-->
+                    <label for="unitNo"> Unit Number: </label><br>
+                    <input type="text" pattern="[0-9]{1,}" onchange="sideErrors(this)" name="unitNo" class="fields" id="unitNo" tabindex="3" required><br>
+                    <label for="streetNo"> Street Number: </label><br>
+                    <input type="text" pattern="[0-9]{1,}" onchange="sideErrors(this)" name="streetNo" class="fields" id="streetNo" tabindex="4" required><br>
+                    <!--Street Name and City allows letters and space-->
+                    <label for="streetName"> Street Name: </label><br>
+                    <input type="text" pattern="[A-Za-z ]{1,}" onchange="sideErrors(this)" name="streetName" class="fields" id="streetName" tabindex="5" required><br>
+                    <label for="city"> City: </label><br>
+                    <input type="text" pattern="[A-Za-z ]{1,}" onchange="sideErrors(this)" name="city" class="fields" id="city" tabindex="6" required><br>
+                    <!--Dropdown menu with Ontario as default-->
+                    <label for="province"> Province: </label><br>
+                    <select name="province" class="fields" id="province" tabindex="7">
+                        <option value="ON" selected>Ontario</option>
+                        <option value="QC">Quebec</option>
+                        <option value="NS">Nova Scotia</option>
+                        <option value="NB">New Brunswick</option>
+                        <option value="MB">Manitoba</option>
+                        <option value="BC">British Columbia</option>
+                        <option value="PE">Prince Edward Island</option>
+                        <option value="SK">Saskatchewan</option>
+                        <option value="AB">Alberta</option>
+                        <option value="NL">Newfoundland and Labrador</option>
+                    </select>
+                    <br>
+                    <!--Pattern A1A1A1-->
+                    <label for="post"> Postal Code: </label><br>
+                    <input type="text" pattern="[ABCEGHJKLMNPRSTVXYabceghjklmnprstvxy][0-9][ABCEGHJKLMNPRSTVWXYZabceghjklmnprstvwxyz] ?[0-9][ABCEGHJKLMNPRSTVWXYZabceghjklmnprstvwxyz][0-9]" placeholder="A1A 1A1" onchange="sideErrors(this)" name="post" class="fields" id="post" tabindex="8" required><br>
+                    <!--Pattern ###-###-####-->
+                    <label for="phoneNo"> Phone Number: </label><br>
+                    <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####" onchange="sideErrors(this)" name="phoneNo" class="fields" id="phoneNo" tabindex="9" required><br>
+                    <label for="email"> Email Address: </label><br>
+                    <input type="email" placeholder="name@host.com" onchange="sideErrors(this)" name="email" class="fields" id="email" tabindex="10" required><br>
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend>Account Information</legend>
+                    <!--Username must start with letter and at least 6 characters long-->
+                    <label for="username"> Username: </label><br>
+                    <input type="text" pattern="[A-Za-z].{5,}" onchange="sideErrors(this)" name="username" class="fields" id="username" tabindex="11" required><br>
+                    <!--Validate password in JS-->
+                    <label for="pass"> Password: </label><br>
+                    <input type="password" onchange="sideErrors(this)" name="pass" id="pass" class="fields" tabindex="12" required><br>
+                    <label for="repass"> Retype Password: </label><br>
+                    <input type="password" onchange="sideErrors(this)" name="repass" id="repass" class="fields" tabindex="13" required><br>
+                </fieldset>               
+                <input type="hidden" name="lastName" id="lastName" value="Chun">
+                <input type="hidden" name="studentId" id="studentId" value="032343154">
+                <br />
+                <div class="button">
+                    <input id="submit" type="submit" tabindex="14">
+                    <input id="reset" type="reset" tabindex="15">
+                </div>
+            </form>
+        </div>
+        <!--Side-->
+        <div class="side">
+        </div>
+    </div>
+    <!--Footer-->
+    <footer>
+        <div class="footer">
+            <p>Sue Ming Chun 2018</p>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

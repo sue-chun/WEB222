@@ -1,0 +1,200 @@
+/* Sue Ming Chun 032342154) */
+
+ @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width:1200px;
+}
+
+/* Text in Index */
+div.main p {
+    font-family: 'Montserrat', sans-serif;
+    color: #444444;
+}
+
+/* test in Index */
+#test {
+    font-size: 80%;
+}
+
+/* style header */
+#header {
+    width: 999px;
+    height: 90px;
+    margin-left: 60px;
+    background-color: #1ab2ff;
+    border-radius: 5px 5px 0px 0px;
+    border: 1px solid #000066;
+}
+
+/* style header text */
+#head {
+    color: #ecf2f9;
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+    margin-right: 10px;
+    font-size: bigger;
+}
+
+/* logo styling */
+header img {
+    border-radius: 50%;
+    float: left;
+    margin-left: 10px;
+}
+
+fieldset {
+    font-family: 'Montserrat', sans-serif;
+    color: #006699;
+    border: 2px solid #00ace6;
+    font-size: 90%;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* style the form fields */
+fieldset input, select {
+    margin: 3px 1px;
+}
+
+/* size for fieldset legend */
+fieldset legend {
+    font-size: 130%;
+}
+
+/*Scrollbar*/
+div.main{	
+    width: 580px;
+    overflow: auto;
+    height: 850px;
+    float: left;
+    padding: 10px;
+}
+
+/* Style provinces drop down menu */
+select {
+    color: #006699;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* User input is dark grey and match font, current field bordered in grey */
+input:focus {
+    font-family: 'Montserrat', sans-serif;
+    color: #444444;
+    border: 2px solid #333333;
+}
+
+/* user input is dark grey and match font */
+input {
+    font-family: 'Montserrat', sans-serif;
+    color: #444444;
+}
+
+/*Style submit and reset buttons */
+#submit, #reset{
+    margin: 10px auto;
+    width: 150px;
+    height: 40px;
+    color: #FFFFFF;
+    background-color: #4db8ff;
+    border-style: outset;
+    border-color: #008ae6;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 4px;
+}
+
+div.button {
+    text-align: center;
+}
+
+/*Side Bar Design*/
+div.side {
+    background-color:  #66ccff;
+    width: 196px;
+    height: 875px;
+    float: left;
+    border: 2px solid #000066;
+}
+
+/* error header style */
+div.side h3 {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+/* error messages style */
+div.side p {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10px;
+}
+
+/*Navigation dimensions*/
+div.navi{
+    margin: 0px auto;
+}
+
+/*Navigation bar styling */
+nav {
+    background-color:  #66ccff;
+    color: #FFFFFF;
+    width: 197px;
+    float:left;
+    height: 875px;
+    margin-left:60px;
+    border: 2px solid #000066;
+}
+
+/* current page on is highlighted */ 
+#current {
+color: #000066;
+}
+
+/*No bullet points*/
+nav ul {
+    -webkit-padding-start: 0px;
+    list-style-type: none;
+}
+
+/*Style Navigation*/
+nav ul a {
+    text-decoration: none; 
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;   
+    text-align: center;
+}
+
+/*padding for navigation */
+div.navi li{
+    padding: 6px 0px;
+}
+
+/*Make footer to be center*/
+footer {
+    max-width: 1000px;
+}
+
+/*Style footer*/
+footer div.footer {
+    background-color: #1ab2ff;
+    height: 90px;
+    width: 999px;
+    float:left;
+    margin-bottom: 20px;
+    margin-left: -1px;
+    border-radius: 0px 0px 5px 5px;
+    border: 1px solid #000066;
+    margin-left: 60px;
+}
+
+/*Footer text style*/
+footer div.footer p {
+    margin-right: 60px;
+    color: #ecf2f9;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 25px;
+}
